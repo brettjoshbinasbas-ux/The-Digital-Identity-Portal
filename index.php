@@ -9,15 +9,14 @@
 
     <h2>Conference Registration</h2>
 
-    <!-- 
-        method="POST" keeps data hidden from URL
-        action="profile.php" sends data to profile page
-    -->
+     
+    <!-- method="POST" for submission, keeps data hidden from URL -->
+    <!-- action="profile.php" sends data to profile page -->
+    
     <form action="profile.php" method="POST">
 
-        <!-- name attribute is CRITICAL -->
         <label>Username:</label><br>
-        <input type="text" name="username" required><br><br>
+        <input type="text" name="username" required><br><br>       <!-- must need name for form POST submission -->
 
         <label>Job Title:</label><br>
         <input type="text" name="jobtitle" required><br><br>
